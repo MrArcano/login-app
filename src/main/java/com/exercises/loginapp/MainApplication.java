@@ -16,7 +16,7 @@ public class MainApplication extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("css/style.css").toExternalForm());
         stage.setScene(scene);
-        stage.setTitle("Floating Placeholder TextField");
+        stage.setTitle("Login");
         stage.show();
     }
 

@@ -47,6 +47,11 @@ public class MainController {
         }else {
             errorPassword.setText("");
         }
+
+        errorPassword.setText(errorPassword.getText() + "\n - Lunghezza minima " + MIN_LENGTH_PASSWORD + " caratteri");
+        errorPassword.setText(errorPassword.getText() + "\n - Deve contenere almeno un numero");
+        errorPassword.setText(errorPassword.getText() + "\n - Deve contenere almeno un carattere minuscolo e uno maiuscolo");
+        errorPassword.setText(errorPassword.getText() + "\n - Deve contenere almeno un carattere speciale [! ? @ #]");
     }
 
     // Verifica se la stringa contiene caratteri speciali [!,?,@,#]
@@ -84,7 +89,7 @@ public class MainController {
 
     @FXML
     public void doLogin(ActionEvent actionEvent) {
-        
+
     }
 
     @FXML
